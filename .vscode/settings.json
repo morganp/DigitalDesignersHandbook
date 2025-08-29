@@ -1,0 +1,4 @@
+{
+    "verilog.languageServer.veribleVerilogLs.enabled": true,
+    "verilog.formatting.verilogHDL.formatter": "verible-verilog-format",
+}

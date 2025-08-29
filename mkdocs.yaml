@@ -1,0 +1,34 @@
+site_name: Digital Designers Handbook
+site_description: A comprehensive guide for digital designers
+site_author: Morgan
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - About: about.md
+  - Chapter 1: Chapter1/chapter1.md
+  - Chapter 2: Chapter2/chapter2.md
+  - Chapter 3: Chapter3/chapter3.md
+  - Chapter 4: Chapter4/chapter4.md
+
+plugins:
+  - search  
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - markdown_wavedrom
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js
+  - js/wavedrom_loader.js
