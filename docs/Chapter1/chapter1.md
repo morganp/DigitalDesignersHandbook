@@ -6,13 +6,13 @@ Base Structures
 
 In digital Electronics there are only a few base cells that are used. These are typically known as boolean operators in programming.
 
+These base cells are typically 2 input cells, with the exception of the Not gate which is a unary operator. The cells are shon below with there circuit diagram and a truth table.
+
 NOT
 
 wavedrom (
     { assign: [
-        ["Output",
-            ["~", "A"]
-        ]
+        ["Output", ["~", "A"] ]
     ]}
 )
 
@@ -26,9 +26,7 @@ AND
 
 wavedrom (
     { assign: [
-        ["Output",
-            ["&", "A", "B"]
-        ]
+        ["Output", ["&", "A", "B"]]
     ]}
 )
     
@@ -43,9 +41,7 @@ OR
 
 wavedrom (
     { assign: [
-        ["Output",
-            ["|", "A", "B"]
-        ]
+        ["Output", ["|", "A", "B"]]
     ]}
 )
 
@@ -60,9 +56,7 @@ XOR (Exclusive-OR)
 
 wavedrom (
     { assign: [
-        ["Output",
-            ["^", "A", "B"]
-        ]
+        ["Output",["^", "A", "B"]]
     ]}
 )
 
